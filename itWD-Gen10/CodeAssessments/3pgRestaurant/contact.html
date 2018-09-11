@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+    Name: Sam Shepard
+    Date Created: 9/8/18
+    Most recent revision: 9/11/18
+-->
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+</head>
+<style>
+    .nav {
+        display: inline;
+    }
+    header, section, footer {
+        text-align: center;
+    }
+    form {
+        width: 400px;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <header>
+        <h1>Queens Eatery</h1>
+    </header>
+
+    <hr />
+    <nav>
+        <p class="nav" ><a href="index.html" target="_blank">Home</a></p>
+        <p class="nav"><a href="menu.html" target="_blank">Menu</a></p>
+        <p class="nav"><a href="contact.html" target="_blank">Contact Us</a></p>
+    </nav>
+    <hr />
+
+    <section id="form">
+        <form action="submit.html" method="POST">
+            <!--text inputs-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br />
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br />
+            <label for="addit">Additional Information:</label>
+            <textarea id="addit" name="addit" rows="4" colspan="10"></textarea><br />
+
+            <!--drop down inputs-->
+            <label for="inquiry">Reason for Inquiry</label>
+            <select id="Inquiry" name="inquiry">
+                <option value="default">Catering</option>
+                <option value="pp">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br />
+
+            <!--radio inputs-->
+            <label for="patronize">Have your been to the restaurant?</label>
+            <input type="radio" id="choice1" name="patronize" value="yes">
+            <label name="chocie1">Yes</label>
+            <input type="radio" id="choice2" name="patronize" value="no">
+            <label name="chocie2">No</label><br />
+
+            <!--checkbox inputs-->
+            <label for="contact">Best days to contact you:</label>
+            <input type="checkbox" id="mon" name="mon" value="m">
+            <label for="mon">M</label>
+            <input type="checkbox" id="tues" name="tues" value="t">
+            <label for="tues">T</label>
+            <input type="checkbox" id="wed" name="wed" value="w">
+            <label for="wed">W</label>
+            <input type="checkbox" id="thur" name="thur" value="th">
+            <label for="thur">Th</label>
+            <input type="checkbox" id="fri" name="fri" value="f">
+            <label for="fri">F</label><br />
+
+            <input type="submit" name="submit" value="Send Request">
+        </form>
+    </section>
+
+    <hr />
+    <footer>
+            <address>111 E 7th Street, Charlotte, NC 28217<br />
+                (704) 989-4443
+            </address>
+    </footer>
+</body>
+</html>
